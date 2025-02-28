@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohol | Municipality</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5%;
+            background: #2E8B57; /* Green Header */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white; /* White text for contrast */
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #1E6B3E;
+            color: white;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Municipality Section */
+        .municipality {
+            padding: 50px 5%;
+            background: white;
+        }
+
+        .municipality h1 {
+            font-size: 28px;
+            color: #2E8B57; /* Green title */
+        }
+
+        .municipality p {
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Municipality Grid */
+        .municipality-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        /* Municipality Item */
+        .municipality-item {
+            background: #f3f3f3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .municipality-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .municipality-item img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+            border: 4px solid #2E8B57; /* Green border added */
+        }
+
+        .municipality-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+
+        .municipality-item h3 {
+            color: #2E8B57; /* Green headings */
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2E8B57; /* Green Footer */
+            padding: 10px;
+            margin-top: 30px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            .municipality h1 {
+                font-size: 24px;
+            }
+            .municipality p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="bohol-logo.png" alt="Bohol Seal" height="60">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+                <li><a href="municipality.html">Municipality</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="municipality">
+        <h1>Municipalities of Bohol</h1>
+        <p>Bohol consists of various municipalities, each with its own rich history, culture, and attractions.</p>
+        
+        <div class="municipality-list">
+            <div class="municipality-item">
+                <img src="tagbi.jpg" alt="Tagbilaran">
+                <h3>Tagbilaran</h3>
+                <p>The capital and commercial center of Bohol, serving as the main gateway to the province.</p>
+            </div>
+            <div class="municipality-item">
+                <img src="pangmun.png" alt="Panglao">
+                <h3>Panglao</h3>
+                <p>Famous for its white-sand beaches, world-class diving spots, and luxury resorts.</p>
+            </div>
+            <div class="municipality-item">
+                <img src="lobocmun.jpg" alt="Loboc">
+                <h3>Loboc</h3>
+                <p>Known for the Loboc River Cruise, the Loboc Children's Choir, and adventure activities.</p>
+            </div>
+            <div class="municipality-item">
+                <img src="carmenmun.png" alt="Carmen">
+                <h3>Carmen</h3>
+                <p>Home to the iconic Chocolate Hills, one of Bohol's top attractions.</p>
+            </div>
+            <div class="municipality-item">
+                <img src="dauismun.jpg" alt="Dauis">
+                <h3>Dauis</h3>
+                <p>Features historical churches, stunning ocean views, and is close to Panglao.</p>
+            </div>
+            <div class="municipality-item">
+                <img src="andamun.jpg" alt="Anda">
+                <h3>Anda</h3>
+                <p>A rising beach destination with pristine white beaches, caves, and snorkeling spots.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - 2025 ITP4 | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohol | Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background: #2E8B57; /* Green header */
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        /* Enhanced Hover Effects */
+        nav ul li a:hover {
+            background-color: #2E8B57;
+            box-shadow: 0 2px 5px rgba(0, 128, 0, 0.5);
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+        }
+
+        .tourism {
+            padding: 50px;
+        }
+
+        .tourism h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .tourism p {
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Responsive Grid for Tourism Section */
+        .tourism-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .tourism-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        /* Enhance tourism items on hover */
+        .tourism-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(34, 139, 34, 0.3);
+        }
+
+        /* Image styling & hover effect */
+        .tourism-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #4CAF50; /* Green border */
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+
+        .tourism-item img:hover {
+            transform: scale(1.1);
+            filter: brightness(90%) saturate(120%);
+        }
+
+        /* Footer */
+        footer {
+            background: #2E8B57; /* Green footer */
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="bohol-logo.png" alt="Bohol Seal" height="60">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#tourism">Tourism</a></li>
+                <li><a href="municipality.html">Municipality</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="tourism" class="tourism">
+        <h1>Explore Bohol</h1>
+        <p>Discover the breathtaking beauty of Bohol, Philippines—a paradise of stunning landscapes, rich history, and warm hospitality.</p>
+        
+        <h2>Nature & Adventure 🌿</h2>
+        <div class="tourism-container">
+            <div class="tourism-item">
+                <h3>Chocolate Hills</h3>
+                <p>(Carmen, Bohol) – Over 1,200 unique cone-shaped limestone hills.</p>
+                <img src="chocohills.jpg" alt="Chocolate Hills">
+            </div>
+            <div class="tourism-item">
+                <h3>Panglao Beach</h3>
+                <p>(Panglao Island) – A white-sand paradise with clear waters and unique sea creatures.</p>
+                <img src="panglaobeach.jpg" alt="Panglao Beach">
+            </div>
+	    <div class="tourism-item">
+                <h3>Hinagdanan Cave</h3>
+                <p>(Dauis, Panglao) – A stunning limestone cave with an underground lagoon.</p>
+                <img src="hinagdanancave.png" alt="Hinagdanan Cave">
+            </div>
+
+            <div class="tourism-item">
+                <h3>Loboc River</h3>
+                <p>(Loboc, Bohol) – A scenic river with floating restaurants and lush greenery.</p>
+                <img src="loboc_river.png" alt="Loboc River">
+            </div>
+        </div>
+		<h2>Religious & Cultural Sites ⛪</h2>
+        <div class="tourism-container">
+            <div class="tourism-item">
+                <h3>Baclayon Church</h3>
+                <p>(Baclayon, Bohol) – One of the oldest stone churches in the Philippines.</p>
+                <img src="bacchruch.png" alt="Baclayon Church">
+            </div>
+
+            <div class="tourism-item">
+                <h3>Dauis Church</h3>
+                <p>(Dauis, Panglao) – A Spanish-era church known for its miraculous well.</p>
+                <img src="dauis.png" alt="Dauis Church">
+            </div>
+
+            <div class="tourism-item">
+                <h3>Blood Compact Shrine</h3>
+                <p>(Tagbilaran City) – A historical landmark of the 1565 Spanish-Filipino pact.</p>
+                <img src="blood.png" alt="Blood Compact Shrine">
+            </div>
+
+            <div class="tourism-item">
+                <h3>Loboc Church</h3>
+                <p>(Loboc, Bohol) – A centuries-old church with intricate Baroque architecture.</p>
+                <img src="lobocchurch.jpg" alt="Loboc Church">
+            </div>
+        </div>
+
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 - 2025 ITP4 | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
